@@ -26,6 +26,7 @@ const TabButton: React.FC<TabButtonProps> = ({ active, selectTab, children }: Ta
                 className="h-1 bg-primary mt-1 mr-3"
             ></motion.div>
         </button>
+     
     );
 };
 

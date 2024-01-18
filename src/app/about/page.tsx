@@ -1,4 +1,5 @@
 "use client"
+
 import React, { useTransition, useState, useEffect } from "react";
 import Image from "next/image";
 import TabButton from "@/components/ui/TabButton";
@@ -61,7 +62,7 @@ const AboutSection: React.FC = () => {
     return (
         <section className="text-white" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-6 xl:gap-16 sm:py-16 lg:px-12 xl:px-16">
-                <Image src="/images/myImage.jpg" alt="myImage" width={400} height={400} />
+                <Image src="/images/Me.jpeg" alt="myImage" width={400} height={400} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-primary/90 mb-4">About Me</h2>
                     <p className="lg:text-l text-[#555] dark:text-[#ADB7BE] ">

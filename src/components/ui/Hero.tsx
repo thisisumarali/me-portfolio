@@ -40,7 +40,7 @@ const Hero = () => {
                 </div>
                 <div className='px-4 py-8 lg:py-0 lg:block flex justify-center'>
                     <Image
-                        src="/images/myImage.jpg"
+                        src="/images/Me.jpeg"
                         alt='Image'
                         width={600}
                         height={600}
