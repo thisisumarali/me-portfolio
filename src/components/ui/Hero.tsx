@@ -6,16 +6,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { TypeAnimation } from 'react-type-animation';
+
 const Hero = () => {
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
-
-    if (!isMounted) {
-        return null;
-    }
+   
 
     return (
 
