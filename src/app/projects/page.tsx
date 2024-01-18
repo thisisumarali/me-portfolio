@@ -24,7 +24,8 @@ async function getProjects() {
 
 }
 const page = async () => {
-    const data: Data[] = await getProjects()
+
+    const data: Data[] = await getProjects();
 
     return (
         <section>
@@ -33,7 +34,7 @@ const page = async () => {
                 <div className='space-y-2 pt-6 pb-8 md:space-y-5'>
                     <h1 className='text-3xl font-extrabold  leading-9 tracking-tight text-black dark:text-white  sm:text-4xl sm:leading-10 md:leading-14 '>My Projects</h1>
                 </div>
-                <div className='grid gap-y-12 sm:grid-cols-2 space-x-6  sm:gap-6 lg:grid-cols-3 lg:gap-10 md:px-12 px-8 lg:px-16 xl:px-24 pt-16 py-8'>
+                <div className='grid gap-y-12 sm:grid-cols-2 lg:gap-y-4 sm:gap-6 lg:grid-cols-3 lg:gap-x-12 md:px-12 px-8 lg:px-16 xl:px-24 pt-16 py-8'>
                     {data.map((project) => (
                         <article key={project._id} className="overflow-hidden dark:border-zinc-600 rounded-sm border border-gray-100 bg-background shadow-xl  dark:shadow-primary/10 shadow-primary/70">
                             <div className="h-56 w-full relative">

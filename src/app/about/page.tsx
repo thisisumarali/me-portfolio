@@ -50,14 +50,20 @@ const TAB_DATA: Tab[] = [
 const AboutSection: React.FC = () => {
     const [tab, setTab] = useState<string>("skills");
     const [isPending, startTransition] = useTransition();
-
-
     const handleTabChange = (id: string) => {
         startTransition(() => {
             setTab(id);
         });
     };
+    const [isMounted, setIsMounted] = useState(false);
 
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) {
+        return null;
+    }
 
     return (
         <section className="text-white" id="about">
