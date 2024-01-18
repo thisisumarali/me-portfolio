@@ -1,7 +1,8 @@
 "use client"
-import React, { useTransition, useState } from "react";
+import React, { useTransition, useState, useEffect } from "react";
 import Image from "next/image";
 import TabButton from "@/components/ui/TabButton";
+
 
 interface Tab {
     title: string;
@@ -17,9 +18,11 @@ const TAB_DATA: Tab[] = [
             <ul className="list-disc pl-2 text-[#555] dark:text-[#ADB7BE]">
                 <li>NextJs</li>
                 <li>Sanity</li>
-                <li>PostgreSQL</li>
+                <li>Javascript</li>
                 <li>TypeScript</li>
                 <li>React</li>
+                <li>C language</li>
+                <li>Wordpress</li>
             </ul>
         ),
     },
@@ -37,7 +40,6 @@ const TAB_DATA: Tab[] = [
         id: "certifications",
         content: (
             <ul className="list-disc pl-2 text-[#555] dark:text-[#ADB7BE]">
-                <li>AWS Cloud Practitioner</li>
                 <li>Advanced diploma in Software Engineering, Aptech North Karachi, Karachi</li>
             </ul>
         ),
@@ -48,11 +50,13 @@ const AboutSection: React.FC = () => {
     const [tab, setTab] = useState<string>("skills");
     const [isPending, startTransition] = useTransition();
 
+
     const handleTabChange = (id: string) => {
         startTransition(() => {
             setTab(id);
         });
     };
+
 
     return (
         <section className="text-white" id="about">

@@ -1,10 +1,13 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
+
     return (
+
         <section className='py-16 px-4'>
             <div className='md:flex justify-center md:justify-between'>
                 <div className='text-primary text_center'>
@@ -27,8 +30,8 @@ const Hero = () => {
                         Passionate web and app developer with a keen eye for UI/UX design, crafting digital experiences that seamlessly  blend functionality and aesthetics to elevate user engagement and satisfaction.
                     </p>
                     <div className='px-4 py-2 gap-x-1 flex justify-center md:block lg:gap-x-3'>
-                        <Button className='px-8 py-6 mr-3 text-white'>
-                            Hire Me
+                        <Button className='px-8 py-6 mr-3 text-white' >
+                            <Link href="">Hire Me</Link>
                         </Button>
                         <Button variant={'secondary'} className='px-8 py-6 text-black dark:text-white'>
                             Download CV
