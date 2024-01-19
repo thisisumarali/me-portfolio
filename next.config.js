@@ -1,11 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental:{
-        serverActions:true,
+    experimental: {
+        serverActions: true,
     },
-    images:{
-        domains:["cdn.sanity.io"],
+    images: {
+        domains: ["cdn.sanity.io"],
     }
 }
+
+module.exports = {
+    basePath: '/src/app/page.tsx',
+    assetPrefix: '/public/',
+};
+
 
 module.exports = nextConfig
