@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FC } from 'react'
-import { ModeToggle } from '../ModeToggle'
+import { ModeToggle } from './ModeToggle'
 import MobileNav from './mobileNav'
 
 interface NavBarProps { }

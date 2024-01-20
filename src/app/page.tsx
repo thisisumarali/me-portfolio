@@ -1,4 +1,4 @@
-import Hero from '@/components/ui/Hero'
+import Hero from '@/components/Hero'
 import { FC } from 'react'
 
 interface pageProps { }
