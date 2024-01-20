@@ -1,6 +1,6 @@
 import React from 'react'
-import GithubIcon from "../../../public/github-icon.svg"
-import LinkedinIcon from "../../../public/linkedin-icon.svg"
+// import GithubIcon from "../../../public/github-icon.svg"
+// import LinkedinIcon from "../../../public/linkedin-icon.svg"
 import Image from "next/image";
 import Link from "next/link"
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
                     <span className='text-primary text-2xl'>Umar Khan</span>
                     <p className='text-slate-600 md:block hidden'>All right reserved </p>
                     <div className="gap-x-2 flex justify-center md:justify-start lg:gap-x-3">
-                        <Link href="https://github.com/thisisumarali" target="_blank">
+                        {/* <Link href="https://github.com/thisisumarali" target="_blank">
                             <Image
                                 src={GithubIcon}
                                 alt="Github Icon"
@@ -28,7 +28,7 @@ const Footer = () => {
                                 height={40} 
                                 className="bg-gray-800 rounded-lg"
                             />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import GithubIcon from "../../../public/github-icon.svg"
-import LinkedinIcon from "../../../public/linkedin-icon.svg"
+// import GithubIcon from "../../../public/github-icon.svg"
+// import LinkedinIcon from "../../../public/linkedin-icon.svg"
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -42,7 +42,7 @@ const Hero = () => {
                         </Button>
                     </div>
                     <div className="pl-6 py-4 gap-x-1 flex justify-center md:justify-start lg:gap-x-3">
-                        <Link href="https://github.com/thisisumarali" target="_blank">
+                        {/* <Link href="https://github.com/thisisumarali" target="_blank">
                             <Image
                                 src={GithubIcon}
                                 alt="Github Icon"
@@ -55,7 +55,7 @@ const Hero = () => {
                                 alt="Linked Icon"
                                 className="bg-gray-800 rounded-lg"
                             />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <div className='px-4 py-8 lg:py-0 lg:block flex justify-center'>
