@@ -8,10 +8,7 @@ const nextConfig = {
     }
 }
 
-module.exports = {
-    basePath: '/src/app/page.tsx',
-    assetPrefix: '/public/',
-};
+module.exports = {};
 
 
 module.exports = nextConfig
