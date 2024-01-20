@@ -1,9 +1,26 @@
+"use client"
 import GithubIcon from "../../../public/github-icon.svg"
 import LinkedinIcon from "../../../public/linkedin-icon.svg"
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from "react"
+interface Formtype {
+    name: string;
+    email: string;
+    subject: string;
+    messages: string;
+}
+const initValues: Formtype = {
+    name: "",
+    email: "",
+    subject: "",
+    messages: ""
+}
+const initState = { values: initValues };
 const page = () => {
+
+    
     return (
         <section className="grid md:grid-cols-2 my-6  px-12 py-12 gap-4">
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
@@ -34,6 +51,18 @@ const page = () => {
             </div>
             <div>
                 <form className="flex flex-col gap-6">
+                    <div className="mb-6">
+                        <label htmlFor="name"
+                            className="dark:text-white text-black mb-2 block text-base font-medium">Your Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            className="bg-gray-200 dark:bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            required
+                            placeholder="NAME:"
+                          
+                        />
+                    </div>
                     <div className="mb-6">
                         <label htmlFor="email"
                             className="dark:text-white text-black mb-2 block text-base font-medium">Your Email:</label>
