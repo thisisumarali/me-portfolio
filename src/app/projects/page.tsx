@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from "react";
 import project from "../../../my-sanity-project/schemas/project";
 import { client } from "../lib/sanity"
